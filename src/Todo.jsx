@@ -56,4 +56,10 @@ export default function ToDo({taskName, isDone ,duration}) {
 }
 
 
-// 
+//  ---Way 5: Ternary -> ||---
+
+
+export default function ToDo({taskName, isDone ,duration}) {
+    return isDone || <p>To be Done: {taskName} Duration: {duration}</p>
+}
+
