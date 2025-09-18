@@ -5,8 +5,10 @@
 //         </div>
 //     )
 // }
+//-----------------------------------
 
 // ---Way 1: normal if else---
+
 
 // export default function ToDo({ task, isDone, duration }) {
 //   if (isDone) {
@@ -54,4 +56,4 @@ export default function ToDo({taskName, isDone ,duration}) {
 }
 
 
-
+// 
