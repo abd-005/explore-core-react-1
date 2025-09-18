@@ -27,11 +27,21 @@
 
 // ---Way 2: normal if return(else)---
 
+// export default function ToDo({taskName, isDone ,duration}) {
+//     if(isDone === 'true'){
+//         return (
+//             <p>Done: {taskName} Duration: {duration}</p>
+//         )
+//     }
+//         return <p>To be done: {taskName} Duration: {duration}</p>
+// }
+
+//  ---Way 3: Ternary--- 
+
+
 export default function ToDo({taskName, isDone ,duration}) {
-    if(isDone === 'true'){
-        return (
-            <p>Done: {taskName} Duration: {duration}</p>
-        )
-    }
-        return <p>To be done: {taskName} Duration: {duration}</p>
+    return isDone ? <p>Done: {taskName} Duration: {duration}</p>
+    :
+    <p>To be done: {taskName} Duration: {duration}</p>
 }
+
