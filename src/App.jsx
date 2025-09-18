@@ -1,7 +1,10 @@
 import ToDo from "./Todo";
+import Actor from './Actor'
 import "./App.css";
 
 function App() {
+  const actors = ['Sakib Khan','Tahsan', 'Hero Alom', 'Omar Sani' ]
+
   return (
     <>
       <div>
@@ -10,8 +13,18 @@ function App() {
           <span style={{ fontSize: "18px", fontWeight: "600" }}>(Part 1)</span>
         </h1>
       </div>
+
+
       <div>
-        <ToDo
+        {
+          actors.map(name => <Actor actorName={name}></Actor>)
+        }
+      </div>
+    
+
+        
+
+        {/* <ToDo
           taskName="Weak up to reality"
           isDone={true}
           duration="12 days"
@@ -21,7 +34,7 @@ function App() {
           taskName="Hangout with warner bros"
           isDone={true}
           duration="40 min"
-        ></ToDo>
+        ></ToDo> */}
 
         {/* <Device dType="Laptop" price="$2000"></Device>
         <Device dType="Phone" price="$1000"></Device>
@@ -39,7 +52,6 @@ function App() {
         <Person></Person>
         <Person></Person>
         <Pet></Pet> */}
-      </div>
     </>
   );
 }
