@@ -1,8 +1,7 @@
-import ToDo from './Todo'
+import ToDo from "./Todo";
 import "./App.css";
 
 function App() {
-
   return (
     <>
       <div>
@@ -17,9 +16,8 @@ function App() {
           isDone={true}
           duration="12 days"
         ></ToDo>
-        <ToDo 
-        taskName="Go to art club" isDone={false} duration="30 min"></ToDo>
-        <ToDo 
+        <ToDo taskName="Go to art club" isDone={false} duration="30 min"></ToDo>
+        <ToDo
           taskName="Hangout with warner bros"
           isDone={true}
           duration="40 min"
