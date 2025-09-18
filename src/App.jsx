@@ -1,10 +1,7 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import ToDo from './Todo'
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -15,7 +12,20 @@ function App() {
         </h1>
       </div>
       <div>
-        <Device dType="Laptop" price="$2000"></Device>
+        <ToDo
+          taskName="Weak up to reality"
+          isDone={true}
+          duration="12 days"
+        ></ToDo>
+        <ToDo 
+        taskName="Go to art club" isDone={false} duration="30 min"></ToDo>
+        <ToDo 
+          taskName="Hangout with warner bros"
+          isDone={true}
+          duration="40 min"
+        ></ToDo>
+
+        {/* <Device dType="Laptop" price="$2000"></Device>
         <Device dType="Phone" price="$1000"></Device>
         <Device dType="Bike" price="$5000"></Device>
         <Phone model="iPhone 16 Pro" name="Mustakim" variant="Seagreen"></Phone>
@@ -30,7 +40,7 @@ function App() {
         <Sports></Sports>
         <Person></Person>
         <Person></Person>
-        <Pet></Pet>
+        <Pet></Pet> */}
       </div>
     </>
   );
