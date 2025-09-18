@@ -14,10 +14,25 @@ function App() {
       <div>
         <Person></Person>
         <Person></Person>
+        <Sports></Sports>
+        <Person></Person>
+        <Person></Person>
       </div>
 
     </>
   )
+}
+
+function Sports() {
+  return (
+    <div className="beautify">
+      <h3>Cricket</h3>
+      <ul>
+        <li>kola</li>
+        <li>komola</li>
+      </ul>
+    </div>
+  );
 }
 
  function Person() {
