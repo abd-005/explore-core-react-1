@@ -17,10 +17,26 @@ function App() {
         <Sports></Sports>
         <Person></Person>
         <Person></Person>
+        <Pet></Pet>
       </div>
 
     </>
   )
+}
+
+function Pet() {
+  return (
+    <div
+      className="beautify"
+      style={{
+        backgroundColor: "salmon",
+        color: "whitesmoke",
+      }}
+    >
+      <h3>Mikasoo</h3>
+      <p>My lovely pet</p>
+    </div>
+  );
 }
 
 function Sports() {
